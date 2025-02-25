@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import jobs from "../../data/jobs.json";
+import { Job } from "../../types/job";
 
 const mockUserSkills = ["React", "JavaScript", "CSS"];
 
@@ -14,7 +15,7 @@ const generateAIMatchScore = (requiredSkills: string[]): number => {
 };
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  const enrichedJobs = jobs.map((job: any) => ({
+  const enrichedJobs = (jobs as Job[]).map((job) => ({
     ...job,
     matchScore: generateAIMatchScore(job.requiredSkills),
   }));
