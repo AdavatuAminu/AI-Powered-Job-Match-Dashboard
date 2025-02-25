@@ -16,5 +16,41 @@
       "salary": "$80,000 - $100,000",
       "requiredSkills": ["Figma", "React", "CSS"],
       "matchScore": 70
+    },
+    {
+        "id": 3,
+        "title": "Backend Developer",
+        "company": "Outsource",
+        "location": "Nairobi, Kenya",
+        "salary": "$82,000 - $150,000",
+        "requiredSkills": ["Ruby", "NodeJS", "Python", "MongoDB"],
+        "matchScore": 20
+    },
+    {
+        "id": 4,
+        "title": "Data Scientist",
+        "company": "Data Insights",
+        "location": "San Francisco, USA",
+        "salary": "$120,000 - $160,000",
+        "requiredSkills": ["Python", "R", "SQL", "Machine Learning"],
+        "matchScore": 90
+    },
+    {
+        "id": 5,
+        "title": "DevOps Engineer",
+        "company": "Cloud Solutions",
+        "location": "Berlin, Germany",
+        "salary": "$100,000 - $130,000",
+        "requiredSkills": ["AWS", "Docker", "Kubernetes", "Terraform"],
+        "matchScore": 15
+    },
+    {
+        "id": 6,
+        "title": "Full Stack Developer",
+        "company": "Innovatech",
+        "location": "London, UK",
+        "salary": "$95,000 - $120,000",
+        "requiredSkills": ["JavaScript", "NodeJS", "React", "MongoDB"],
+        "matchScore": 80
     }
-  ]
+]

@@ -26,13 +26,13 @@ export default function JobList({ jobs, onJobClick }: JobListProps) {
           </p>
           <p className="text-gray-500">{job.salary}</p>
           <div className="mt-2">
-            <div className="text-sm">Match Score:</div>
+            <div className="text-sm">Match Score: {job.matchScore}%</div>
             <div className="w-full bg-gray-200 rounded-full h-2.5">
               <div
                 className={`h-2.5 rounded-full ${getScoreColor(
                   job.matchScore || 0
                 )}`}
-                style={{ width: `${job.matchScore}%` }}
+                style={{ width: `${job.matchScore || 0}%` }}
               ></div>
             </div>
           </div>

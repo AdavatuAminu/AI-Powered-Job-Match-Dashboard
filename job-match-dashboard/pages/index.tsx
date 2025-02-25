@@ -7,7 +7,7 @@ import { Job, UserProfile } from "../types/job";
 export default function Home() {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [selectedJob, setSelectedJob] = useState<Job | null>(null);
-  const user: UserProfile = { skills: ["React", "JavaScript", "CSS"] };
+  const user: UserProfile = { skills: ["React", "JavaScript", "CSS"] }; // Mock user
 
   useEffect(() => {
     const loadJobs = async () => {
@@ -17,7 +17,7 @@ export default function Home() {
       }
       const enrichedJobs = jobData.map((job) => ({
         ...job,
-        matchScore: calculateMatchScore(job, user),
+        matchScore: job.matchScore !== undefined ? job.matchScore : calculateMatchScore(job, user),
       }));
       setJobs(enrichedJobs);
     };
@@ -34,11 +34,13 @@ export default function Home() {
       ) : (
         <p className="text-center text-gray-500">No jobs available</p>
       )}
-      <JobDetailsModal
-        job={selectedJob}
-        user={user}
-        onClose={() => setSelectedJob(null)}
-      />
+      {selectedJob && (
+        <JobDetailsModal
+          job={selectedJob}
+          user={user}
+          onClose={() => setSelectedJob(null)}
+        />
+      )}
     </div>
   );
 }
