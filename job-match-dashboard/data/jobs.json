@@ -5,8 +5,7 @@
       "company": "Tech Corp",
       "location": "Remote",
       "salary": "$70,000 - $90,000",
-      "requiredSkills": ["React", "Next.js", "JavaScript", "Tailwind CSS"],
-      "matchScore": 85
+      "requiredSkills": ["React", "Next.js", "JavaScript", "Tailwind CSS"]
     },
     {
       "id": 2,
@@ -14,8 +13,7 @@
       "company": "DesignPro",
       "location": "New York, USA",
       "salary": "$80,000 - $100,000",
-      "requiredSkills": ["Figma", "React", "CSS"],
-      "matchScore": 70
+      "requiredSkills": ["Figma", "React", "CSS"]
     },
     {
         "id": 3,
@@ -23,8 +21,7 @@
         "company": "Outsource",
         "location": "Nairobi, Kenya",
         "salary": "$82,000 - $150,000",
-        "requiredSkills": ["Ruby", "NodeJS", "Python", "MongoDB"],
-        "matchScore": 20
+        "requiredSkills": ["Ruby", "NodeJS", "Python", "MongoDB"]
     },
     {
         "id": 4,
@@ -32,8 +29,7 @@
         "company": "Data Insights",
         "location": "San Francisco, USA",
         "salary": "$120,000 - $160,000",
-        "requiredSkills": ["Python", "R", "SQL", "Machine Learning"],
-        "matchScore": 90
+        "requiredSkills": ["Python", "R", "SQL", "Machine Learning"]
     },
     {
         "id": 5,
@@ -41,8 +37,7 @@
         "company": "Cloud Solutions",
         "location": "Berlin, Germany",
         "salary": "$100,000 - $130,000",
-        "requiredSkills": ["AWS", "Docker", "Kubernetes", "Terraform"],
-        "matchScore": 15
+        "requiredSkills": ["AWS", "Docker", "Kubernetes", "Terraform"]
     },
     {
         "id": 6,
@@ -50,7 +45,6 @@
         "company": "Innovatech",
         "location": "London, UK",
         "salary": "$95,000 - $120,000",
-        "requiredSkills": ["JavaScript", "NodeJS", "React", "MongoDB"],
-        "matchScore": 80
+        "requiredSkills": ["JavaScript", "NodeJS", "React", "MongoDB"]
     }
 ]

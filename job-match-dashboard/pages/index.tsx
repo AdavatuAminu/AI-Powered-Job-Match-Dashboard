@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import JobList from "../components/JobList";
 import JobDetailsModal from "../components/JobDetailsModal";
-import { fetchJobs, calculateMatchScore } from "../lib/api";
+import { fetchJobs } from "../lib/api";
 import { Job, UserProfile } from "../types/job";
 
 export default function Home() {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [selectedJob, setSelectedJob] = useState<Job | null>(null);
-  const user: UserProfile = { skills: ["React", "JavaScript", "CSS"] }; // Mock user
+  const user: UserProfile = { skills: ["React", "JavaScript", "CSS"] };
 
   useEffect(() => {
     const loadJobs = async () => {
@@ -15,11 +15,7 @@ export default function Home() {
       if (jobData.length === 0) {
         console.warn("No jobs fetched from API");
       }
-      const enrichedJobs = jobData.map((job) => ({
-        ...job,
-        matchScore: job.matchScore !== undefined ? job.matchScore : calculateMatchScore(job, user),
-      }));
-      setJobs(enrichedJobs);
+      setJobs(jobData);
     };
     loadJobs();
   }, []);

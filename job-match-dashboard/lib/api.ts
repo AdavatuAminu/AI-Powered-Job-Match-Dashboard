@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Job, UserProfile } from "../types/job";
+import { Job } from "../types/job";
 
 export const fetchJobs = async (): Promise<Job[]> => {
   try {
@@ -9,11 +9,4 @@ export const fetchJobs = async (): Promise<Job[]> => {
     console.error("Failed to fetch jobs:", error);
     return [];
   }
-};
-
-export const calculateMatchScore = (job: Job, user: UserProfile): number => {
-  const matchedSkills = job.requiredSkills.filter((skill) =>
-    user.skills.includes(skill)
-  );
-  return Math.round((matchedSkills.length / job.requiredSkills.length) * 100);
 };
