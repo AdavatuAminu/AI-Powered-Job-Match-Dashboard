@@ -25,7 +25,7 @@ Run the Development Server:
 npm run dev
 Open the App:
 Visit http://localhost:3000 in your browser to see the dashboard.
-Live Demo (Link to the deployed and hosted App on Vercel): 
+Live Demo (Link to the deployed and hosted App on Vercel): https://ai-powered-job-match-dashboard-swart.vercel.app/
 
 # Future Improvements
 Integrate a real AI service (e.g., via an external API) for match score generation.
